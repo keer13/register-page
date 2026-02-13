@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <center> 
+        <h2>Student Registration</h2>
+
+        <div class="form-group">
+            <input type="text" id="name" placeholder="Enter Name">
+            <input type="email" id="email" placeholder="Enter Email">
+        </div>
+
+        <div class="btn-group">
+            <button onclick="addStudent()" class="primary">Submit</button>
+            <button onclick="getStudents()" class="secondary">View Students</button>
+        </div>
+
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    </center>
+
+<script src="script.js"></script>
+</body>
+</html>
